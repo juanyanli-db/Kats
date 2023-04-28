@@ -21,7 +21,8 @@ with open("requirements.txt", "r") as f:
 with open("test_requirements.txt", "r") as f:
     extra_requires = f.read().splitlines()
 
-if not os.environ.get("MINIMAL_KATS", False):
+# don't install extra by default
+if not os.environ.get("MINIMAL_KATS", True):
     install_requires += extra_requires
 
 
