@@ -11,6 +11,5 @@ scipy
 seaborn
 setuptools-git
 statsmodels
-lightgbm
 numba
 typing-extensions; python_version < '3.8'
